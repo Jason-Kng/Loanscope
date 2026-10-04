@@ -1,16 +1,52 @@
-# React + Vite
+# LoanScope
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LoanScope is a React web application that allows users to explore how a loan changes based on the starting principal, annual interest rate, and monthly payment.
 
-Currently, two official plugins are available:
+The application calculates the loan payoff time, payoff date, total interest paid, and generates an amortization schedule. It also displays the remaining loan balance over time using an interactive chart.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Adjust loan principal, interest rate, and monthly payment using sliders or numeric inputs
+- Calculate loan payoff time and payoff date
+- Calculate total interest paid
+- Display remaining loan balance over time
+- Toggle cumulative interest on the loan chart
+- Display a month-by-month amortization schedule
+- Export the amortization schedule as a CSV file
+- Share a loan scenario using URL parameters
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Requirements
 
-## Expanding the ESLint configuration
+Before running the project, make sure the following are installed:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js
+- npm
+
+## Running the Project
+
+1. Clone or download the repository.
+
+2. Open a terminal in the project directory.
+
+3. Install the project dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Open the local URL displayed in the terminal in a web browser. Vite will typically use:
+
+```text
+http://localhost:5173/
+```
+
+## Disclaimer
+
+LoanScope provides illustrative loan estimates only and is not financial advice. Actual lender terms may differ due to fees, escrow, or different compounding methods.
+
